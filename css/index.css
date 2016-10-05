@@ -1,14 +1,13 @@
 body {
     background: #263238;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
     margin: 0;
 }
 
 h1 {
     color: #607D8B;
     font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     margin: 10px 17px;
 }
 
@@ -19,7 +18,7 @@ section {
 h2 {
     color: #ECEFF1;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: normal;
     line-height: 1.5em;
     list-style-type: none;
@@ -35,7 +34,8 @@ h2 {
 }
 
 .content {
-    color: #7986cb;
+    color: #B2EBF2;
+    font-size: 1.3em;
     margin-left: 20px;
     max-height: 0;
     overflow: hidden;
