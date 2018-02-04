@@ -1,14 +1,24 @@
 body {
     background: #263238;
+    color: #B2EBF2;
+    display: flex;
+    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 }
 
 h1 {
     color: #607D8B;
     font-family: 'Roboto', sans-serif;
     font-size: 4em;
-    margin: 10px 17px;
+    margin: .2em .3em;
 }
 
 h2 {
@@ -23,17 +33,17 @@ h2 {
 h3 {
     font-weight: normal;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: .5em;
 }
 
 h4 {
     font-weight: normal;
     margin: 0;
-    margin-left: 10px;
+    margin-left: .5em;
 }
 
 section {
-    margin-left: 50px;
+    margin-left: 3rem;
 }
 
 ul {
@@ -42,8 +52,8 @@ ul {
 
 p {
     margin-top: 0;
+    max-width: 50em;
     white-space: pre-line;
-    width: 100em;
 }
 
 a {
@@ -60,10 +70,9 @@ a {
 }
 
 .content {
-    color: #B2EBF2;
     font-size: 1.3em;
-    margin-left: 20px;
+    margin-left: 2rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+    transition: max-height .5s cubic-bezier(.65, .05, .36, 1);
 }
