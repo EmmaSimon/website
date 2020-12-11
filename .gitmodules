@@ -1,0 +1,3 @@
+[submodule "knit"]
+	path = knit
+	url = git@github.com:EmmaSimon/knit.git
