@@ -1,0 +1,7 @@
+knit/node_modules
+knit/build
+data
+.dockerignore
+Dockerfile
+Dockerfile.prod
+data/certbot/conf/keys

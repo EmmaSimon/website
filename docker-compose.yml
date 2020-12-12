@@ -1,5 +1,13 @@
 version: '3'
 services:
+  website:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+      - /app/knit/node_modules
+      - knit-build:/app/knit/build
   nginx:
     image: nginx:1.19
     restart: unless-stopped
@@ -8,7 +16,7 @@ services:
       - "443:443"
     volumes:
       - ./software/html:/usr/share/nginx/software/html
-      - ./knit/build:/usr/share/nginx/knit/html 
+      - knit-build:/usr/share/nginx/knit/html 
       - ./data/nginx:/etc/nginx/conf.d
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
@@ -17,3 +25,6 @@ services:
     volumes:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
+
+volumes:
+  knit-build:
